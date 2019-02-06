@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".LogIn.CreateOrder.CreateOrederActivity">
+
+    <ImageView
+        android:id="@+id/imageOrder"
+        android:src="@drawable/orderimage"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="160dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:text="Title : "
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/imageOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/titleOrder"
+        android:layout_toRightOf="@+id/title"
+        android:layout_alignBaseline="@+id/title"
+        android:hint="enter title "
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    <TextView
+        android:id="@+id/description"
+        android:text="Description : "
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/descriptionOrder"
+        android:layout_toRightOf="@+id/description"
+        android:layout_alignBaseline="@+id/description"
+        android:hint="enter description "
+        android:padding="5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:background="#E2B318"
+        android:text="CREATE"
+        android:layout_below="@+id/descriptionOrder"
+
+        />
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/progressBar"
+        android:elevation="10dp"
+        android:layout_marginTop="20dp"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/create"
+        />
+
+
+</RelativeLayout>

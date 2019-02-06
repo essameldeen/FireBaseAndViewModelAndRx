@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="5dp"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageOrder"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageOrder"
+            android:padding="5dp"
+            android:text="Title:" />
+
+        <TextView
+            android:id="@+id/titleOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/title"
+            android:padding="5dp"
+
+            android:text="ESSAM"
+            android:textColor="@color/colorAccent"
+
+
+            />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_toRightOf="@+id/imageOrder"
+            android:padding="5dp"
+            android:text="Description:" />
+
+        <TextView
+            android:id="@+id/descriptionOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleOrder"
+            android:layout_toRightOf="@+id/description"
+            android:padding="5dp"
+            android:text="ESSAM"
+            android:textColor="@color/colorAccent"
+
+
+            />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
